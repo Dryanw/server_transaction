@@ -4,13 +4,14 @@ pragma solidity ^0.8.4;
 
 contract SimpleContract {
     address private _owner;
+    address public _winner;
 
     constructor () {
         _owner = msg.sender;
     }
 
-    function setOwner(address newAddr) public {
+    function setWinner(address newAddr) public {
         require(msg.sender == _owner);
-        _owner = newAddr;
+        _winner = newAddr;
     }
 }

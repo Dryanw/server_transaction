@@ -1,5 +1,23 @@
 const ABI = [
             	{
+            		"inputs": [],
+            		"stateMutability": "nonpayable",
+            		"type": "constructor"
+            	},
+            	{
+            		"inputs": [],
+            		"name": "_winner",
+            		"outputs": [
+            			{
+            				"internalType": "address",
+            				"name": "",
+            				"type": "address"
+            			}
+            		],
+            		"stateMutability": "view",
+            		"type": "function"
+            	},
+            	{
             		"inputs": [
             			{
             				"internalType": "address",
@@ -7,15 +25,10 @@ const ABI = [
             				"type": "address"
             			}
             		],
-            		"name": "setOwner",
+            		"name": "setWinner",
             		"outputs": [],
             		"stateMutability": "nonpayable",
             		"type": "function"
-            	},
-            	{
-            		"inputs": [],
-            		"stateMutability": "nonpayable",
-            		"type": "constructor"
             	}
             ];
 
